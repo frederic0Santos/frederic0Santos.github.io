@@ -15,6 +15,7 @@ p{
 }
 pre{
   color: white;
+  font-size: 115%;
 }
 table,th,td{
   border: 1px solid rgb(149, 248, 255);
@@ -25,4 +26,14 @@ table,th,td{
 li{
   color: white;
   font-size: 105%;
+}
+fieldset{
+  color: white;
+  border: 0px;
+}
+input{
+  background-color:  #141414f6;
+  color: white;
+  border: 0.1px solid;
+  
 }
