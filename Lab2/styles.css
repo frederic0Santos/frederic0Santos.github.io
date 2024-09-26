@@ -18,4 +18,9 @@ pre{
 }
 table{
   color: white;
+  text-align: center;
+}
+li{
+  color: white;
+  font-size: 105%;
 }
