@@ -6,9 +6,12 @@ h1 {
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
-body {
-    color: white
-    text-align: right;
+h2{
+    color: white;
+    size:;
+}
+h3{
+    color: white;
 }
 li {
     color: white;
