@@ -1,39 +1,40 @@
 body {
-    background-color: #141414f6;
+  background-color: #141414f6;
 }
-h1 {
+h1,
+h2,
+h3,
+p {
   color: white;
 }
-h2{
-    color: white;
-}
-h3{
-  color: white;
-}
-p{
-  color: white;
-}
-pre{
+pre {
   color: white;
   font-size: 115%;
 }
-table,th,td{
+table,
+th,
+td {
   border: 1px solid rgb(149, 248, 255);
   color: white;
   text-align: center;
   border-collapse: collapse;
 }
-li{
+li {
   color: white;
   font-size: 105%;
 }
-fieldset{
+fieldset {
   color: white;
   border: 0px;
 }
-input{
-  background-color:  #141414f6;
+input,
+select,
+textarea {
+  background-color: #141414f6;
   color: white;
   border: 0.1px solid;
-  
+}
+
+legend {
+  font-size: 110%;
 }

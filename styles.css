@@ -1,20 +1,14 @@
 body {
-    background-color: #141414f6;
+  background-color: #141414f6;
 }
 h1 {
   color: white;
   text-align: center;
   font-family: "Times New Roman", Times, serif;
 }
-h2{
-    color: white;
-}
-h3{
-    color: white;
-}
-li {
-    color: white;
-}
-p{
-    color: white;
+h2,
+h3,
+li,
+p {
+  color: white;
 }
