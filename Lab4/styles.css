@@ -13,7 +13,7 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: rgb(124, 207, 255);
+  background-color: rgba(124, 207, 255, 0.855);
 }
 footer p {
   margin-bottom: -17px;
