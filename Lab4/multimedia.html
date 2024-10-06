@@ -23,26 +23,38 @@
     </header>
     <main>
       <h2>Multimédia</h2>
+      <div class="navMulti">
       <p>
-        <a style="background-color: black; border-radius: 50px" href="#fotografias">Fotografias</a>
-        <a style="background-color: black; border-radius: 50px" href="#video">Vídeo</a>
-        <a style="background-color: black; border-radius: 50px" href="#poema">Poema</a>
+        <a href="#fotografias">Fotografias</a>
+        <a href="#video">Vídeo</a>
+        <a href="#poema">Poema</a>
       </p>
-      <section>
+    </div>
+      <section  class="fotografias">
         <p id="fotografias">
+          <h3>Fotografias</h3>
+          <figure>
           <a href="Imagens/Hagia Sofia_Grande.png" target="fotoIframe"
             ><img src="Imagens/Hagia Sofia_Pequena.png" alt="Hagia Sofia"
           /></a>
+          <figcaption>Fotografia 1 - Hagia Sofia</figcaption>
+          </figure>
+          <figure>
           <a href="Imagens/Palácio Topkapi_Grande.png" target="fotoIframe"
             ><img
               src="Imagens/Palácio Topkapi_Pequena.png"
               alt="Palácio Topkapi"
           /></a>
+          <figcaption>Fotografia 2 - Palácio Topkapi</figcaption>
+        </figure>
+          <figure>
           <a href="Imagens/Praça Sultanahmet_Grande.png" target="fotoIframe"
             ><img
               src="Imagens/Praça Sultanahmet_Pequena.png"
               alt="Praça Sultanahmet"
           /></a>
+          <figcaption>Fotografia 3 - Praça Sultanahmet</figcaption>
+        </figure>
         </p>
         <iframe
           name="fotoIframe"
@@ -66,7 +78,7 @@
         ></iframe>
       </section>
 
-      <section>
+      <section class="poema">
         <h3>Poema</h3>
         <pre id="poema">
     Nas margens do Bósforo, a luz se esparrama,

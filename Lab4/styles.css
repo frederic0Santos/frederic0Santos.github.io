@@ -1,4 +1,4 @@
-*{
+* {
   margin: 0px;
   padding: 0px;
 }
@@ -6,7 +6,7 @@ body {
   background-color: #141414f6;
   text-align: center;
 }
-footer{
+footer {
   text-align: left;
   color: white;
   position: fixed;
@@ -15,14 +15,14 @@ footer{
   width: 100%;
   background-color: rgb(124, 207, 255);
 }
-footer p{
+footer p {
   margin-bottom: -17px;
 }
-footer pre{
+footer pre {
   padding-left: 10px;
   padding-top: 8px;
 }
-h1{
+h1 {
   color: white;
   text-align: center;
   background-color: rgba(124, 207, 255, 0.855);
@@ -30,7 +30,7 @@ h1{
   padding-bottom: 30px;
   font-size: 400%;
 }
-main{
+main {
   background-color: rgb(45, 46, 46);
   margin-left: 200px;
   margin-right: 200px;
@@ -39,7 +39,7 @@ main{
   margin-bottom: 100px;
   font-size: 120%;
 }
-h2{
+h2 {
   color: white;
   text-align: center;
   padding-bottom: 60px;
@@ -55,11 +55,42 @@ pre {
   color: white;
   font-size: 115%;
 }
-.local p{
+.local p {
   text-align: left;
-  position: relative;
-  left: 30%;
-} 
+  margin-right: 30%;
+  margin-left: 30%;
+}
+.navMulti {
+  margin-top: -50px;
+}
+.navMulti a {
+  background-color: black;
+  border-radius: 50px;
+}
+.poema pre {
+  text-align: left;
+  padding: 30px 0px 20px 40px;
+  margin-left: 35%;
+  margin-right: 35%;
+  background-color: rgba(0, 0, 0, 0.651);
+  border-radius: 20px;
+}
+.poema {
+  text-align: center;
+}
+.multimedia h3 {
+  border-bottom: 2px solid;
+  margin-bottom: 30px;
+}
+figcaption{
+  color: white;
+}
+figure{
+max-width: 200px;
+margin-left: 20px;
+margin-right: 20px;
+display: inline-block;
+}
 table,
 th,
 td {
@@ -72,9 +103,25 @@ li {
   color: white;
   font-size: 105%;
 }
+.quizz {
+  text-align: left;
+}
+.quizz p{
+  text-align: left;
+}
 fieldset {
   color: white;
   border: 0px;
+}
+.viagem fieldset{
+  text-align: center;
+}
+.viagem input,.viagem select,.viagem textarea{
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+ margin-left: auto;
+ margin-right: auto;
 }
 input,
 select,
@@ -83,25 +130,32 @@ textarea {
   color: white;
   border: 0.1px solid;
 }
+.quizz input, .quizz select, .quizz textarea{
+  display: block;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
 
 legend {
-  font-size: 110%;
+  font-size: 120%;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
-a{
+a {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding-left: 16px;
   padding-right: 16px;
   border: 0px solid black;
 }
-nav a:hover{
-  color:rgb(124, 207, 255);
+nav a:hover {
+  color: rgb(124, 207, 255);
   border: 10px;
 }
-main a:hover{
-  color:rgb(124, 207, 255);
+main a:hover {
+  color: rgb(124, 207, 255);
 }
-nav{
+nav {
   font-size: 130%;
   text-decoration: none;
   background-color: rgb(3, 3, 5);
@@ -109,7 +163,7 @@ nav{
   padding-top: 10px;
   padding-bottom: 10px;
 }
-img{
+img {
   margin-top: 20px;
   margin-bottom: 20px;
 }

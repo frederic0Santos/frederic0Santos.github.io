@@ -6,7 +6,7 @@
     <title>Istambul</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
+  <body class="quizz">
       <header>
             <h1>Istambul</h1>
             <nav>
@@ -25,20 +25,18 @@
       <h2>Quizz</h2>
       <fieldset>
         <legend>Informações Pessoais</legend>
-        <pre>
+
 <label for="nome" >Nome:</label>    <input type="text" id="nome" name="nome">
 
 <label for="apelido">Apelido:</label> <input type="text" id="Apelido" name="Apelido">
 
 <label for="email">Email:</label>   <input type="email" id="email" name="email">
 
-               <input type="submit" value="Enviar">
-            </pre>
+<input type="submit" value="Enviar">
       </fieldset>
       <fieldset>
         <form method="get" action="https://postman-echo.com/get">
         <legend>Perguntas Sobre Istambul</legend>
-        <pre>
 
 <label for="cidade">Digite uma cidade relacionada a Istambul:</label>
 
@@ -47,18 +45,19 @@
 
 
 <p>Qual o continente onde está localizada Istambul?</p>
-      <input type="radio" name="continente" value="europa" id="europa"><label for ="europa"> Europa</label>
 
-      <input type="radio" name="continente" value="asia" id="asia"><label for ="asia"> Ásia</label>
+<label for ="europa"> Europa</label><input type="radio" name="continente" value="europa" id="europa">
 
-      <input type="radio" name="continente" value="ambos" id="ambos"><label for = "ambos"> Ambos</label>
+<label for ="asia"> Ásia</label><input type="radio" name="continente" value="asia" id="asia">
+
+<label for = "ambos"> Ambos</label><input type="radio" name="continente" value="ambos" id="ambos">
       
 <p>Quais atrações você gostaria de visitar em Istambul? (Selecione quantas quiser)</p>
-      <input type="checkbox" name="atracoes" value="mesquita" id="mesquita"><label for="mesquita"> Mesquita Azul</label>
+<label for="mesquita"> Mesquita Azul</label><input type="checkbox" name="atracoes" value="mesquita" id="mesquita">
 
-      <input type="checkbox" name="atracoes" value="santa_sophia" id="santa_sophia"><label for="santa_sophia"> Santa Sophia</label>
+<label for="santa_sophia"> Santa Sophia</label><input type="checkbox" name="atracoes" value="santa_sophia" id="santa_sophia">
 
-      <input type="checkbox" name="atracoes" value="palacio_topkapi" id="palacio_topkapi"><label for="palacio_topkapi"> Palácio Topkapi</label>
+<label for="palacio_topkapi"> Palácio Topkapi</label><input type="checkbox" name="atracoes" value="palacio_topkapi" id="palacio_topkapi">
          
 
 <label for="data_visita">Quando você pretende visitar Istambul?</label>
@@ -126,9 +125,8 @@
 
 
 
-        <input type="reset"></input>  <input type="submit" value="Enviar"></input>
+      <input type="reset"></input> <input type="submit" value="Enviar"></input>
 </form>
-        </pre>
       </fieldset>
     </main>
     <footer>
