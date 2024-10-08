@@ -135,7 +135,7 @@ textarea {
   background-color: #141414f6;
   color: white;
   border: 0.1px solid;
-  padding-left: 5px;
+  padding: 5px 5px 5px 5px;
 }
 .quizz input, .quizz select, .quizz textarea{
   display: block;
