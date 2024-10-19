@@ -11,4 +11,10 @@ h3,
 li,
 p {
   color: white;
+}  
+a{
+  text-decoration: none;
+}
+a:hover{
+  font-size: 110%;
 }

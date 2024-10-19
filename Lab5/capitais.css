@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: rgb(149, 216, 255);
+    align-items: center;
+    padding: 20px;
+    font-size: 200%;
+    color: white;
+    justify-content: space-between;
+    display: flex
+}
+header a:hover{
+    background-color: rgb(124, 207, 255);
+    padding: 10px;
+    border-radius: 10px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+}
+main{
+    background-color: rgb(124, 207, 255);
+    color: white;
+}
+pre{
+    font-size: 120%;
+    font-weight:bold;
+    font-style: italic;
+}
+#poema{
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#poema p, #poema pre{
+    display: inline-block;
+    margin-inline: auto;
+}
+img{
+    width: 99.4vw;
+    height: 100vh;
+}
+#paisagem div{
+    position: relative;
+}
+#paisagem a{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    color:black;
+    font-size: large;
+    text-decoration: none;
+}
+#capitais section{
+    display: flex;
+    justify-content: space-evenly;
+}
+#capitais div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 200px;
+    background-color: rgb(56, 178, 249);
+    margin: 30px;
+    border-radius: 10px;
+}
+#capitais div:hover{
+    background-color: rgb(27, 164, 243);
+}
+#capitais img {
+    width: 100px;
+    height: auto;
+    margin-right: 20px;
+    border-radius: 10px 0px 0px 10px;
+}
+#capitais{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
