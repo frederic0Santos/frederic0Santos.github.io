@@ -81,14 +81,14 @@ h3 {
   border-bottom: 2px solid white;
   margin-bottom: 30px;
 }
-figcaption{
+figcaption {
   color: white;
 }
-figure{
-max-width: 200px;
-margin-left: 20px;
-margin-right: 20px;
-display: inline-block;
+figure {
+  max-width: 200px;
+  margin-left: 20px;
+  margin-right: 20px;
+  display: inline-block;
 }
 th,
 td {
@@ -97,14 +97,14 @@ td {
   text-align: center;
   border-collapse: collapse;
   width: 30%;
-  padding: 5px 5px 5px 5px;
+  padding: 5px 20px 5px 20px;
 }
-table{
+table {
   color: white;
   text-align: center;
   border-collapse: collapse;
-  width: 50%;
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
 }
 li {
   color: white;
@@ -113,22 +113,24 @@ li {
 .quizz {
   text-align: left;
 }
-.quizz p{
+.quizz p {
   text-align: left;
 }
 fieldset {
   color: white;
   border: 0px;
 }
-.viagem fieldset{
+.viagem fieldset {
   text-align: center;
 }
-.viagem input,.viagem select,.viagem textarea{
+.viagem input,
+.viagem select,
+.viagem textarea {
   display: block;
   margin-bottom: 20px;
   margin-top: 20px;
- margin-left: auto;
- margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 input,
 select,
@@ -138,7 +140,9 @@ textarea {
   border: 0.1px solid;
   padding: 5px 5px 5px 5px;
 }
-.quizz input, .quizz select, .quizz textarea{
+.quizz input,
+.quizz select,
+.quizz textarea {
   display: block;
   margin-bottom: 20px;
   margin-top: 30px;
@@ -175,6 +179,6 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-ol{
+ol {
   text-align: left;
 }

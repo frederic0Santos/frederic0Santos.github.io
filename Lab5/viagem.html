@@ -2,7 +2,7 @@
 <html lang="pt">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0" />
     <title>Istambul</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -19,78 +19,125 @@
         <a href="pontosinteresse.html">Pontos de Interesse</a>
         <a href="capitais.html">Capitais</a>
       </nav>
-      <img src="Imagens/istambul.jpg" alt="Istambul" width="33%" style="border-radius: 30px 0px 0px 30px;"/>
-      <img src="Imagens/istambul2.jpg" alt="Istambul"width="33%"/>
-      <img src="Imagens/istambul3.jpg" alt="Istambul"width="33%" style="border-radius: 0px 30px 30px 0px;"/>
+      <img
+        src="Imagens/istambul.jpg"
+        alt="Istambul"
+        width="33%"
+        style="border-radius: 30px 0px 0px 30px"
+      />
+      <img src="Imagens/istambul2.jpg" alt="Istambul" width="33%" />
+      <img
+        src="Imagens/istambul3.jpg"
+        alt="Istambul"
+        width="33%"
+        style="border-radius: 0px 30px 30px 0px"
+      />
     </header>
     <main>
       <h2>Registre a sua intenção de viagem a Istambul</h2>
 
       <form method="get" action="https://postman-echo.com/get">
-<fieldset class="viagem">
+        <fieldset class="viagem">
+          <label for="nome">Nome:</label>
 
-  <label for="nome">Nome:</label>
+          <input
+            type="text"
+            id="nome"
+            name="nome"
+            placeholder="Digite seu nome"
+            autocomplete="given-name"
+            required
+          />
 
-  <input type="text" id="nome" name="nome" placeholder="Digite seu nome" autocomplete="given-name" required>
+          <label for="apelido">Apelido:</label>
 
+          <input
+            type="text"
+            id="apelido"
+            name="apelido"
+            placeholder="Digite seu apelido"
+            autocomplete="family-name"
+            required
+          />
 
-  <label for="apelido">Apelido:</label>
+          <label for="email">Email:</label>
 
-  <input type="text" id="apelido" name="apelido" placeholder="Digite seu apelido" autocomplete="family-name" required>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Digite seu email"
+            required
+          />
 
+          <label for="data_partida">Data de Partida:</label>
 
-  <label for="email">Email:</label>
+          <input type="date" id="data_partida" name="data_partida" required />
 
-  <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+          <label for="data_regresso">Data de Regresso:</label>
 
-  
-  <label for="data_partida">Data de Partida:</label>
+          <input type="date" id="data_regresso" name="data_regresso" />
 
-  <input type="date" id="data_partida" name="data_partida" required>
+          <label for="passageiros">Número de passageiros:</label>
 
+          <input
+            type="number"
+            id="passageiros"
+            name="passageiros"
+            min="1"
+            max="20"
+            value="1"
+          />
 
-  <label for="data_regresso">Data de Regresso:</label>
+          <label for="transporte">Meio de transporte favorito:</label>
 
-  <input type="date" id="data_regresso" name="data_regresso">
+          <input
+            list="transportes"
+            id="transporte"
+            name="transporte"
+            placeholder="Ex: Carro"
+          />
+          <datalist id="transportes">
+            <option value="carro"></option>
+            <option value="comboio"></option>
+            <option value="aviao"></option>
+            <option value="autocarro"></option>
+            <option value="navio"></option>
+          </datalist>
 
-  
-  <label for="passageiros">Número de passageiros:</label>
+          <label for="servico">Qual o serviço desejado:</label>
 
-  <input type="number" id="passageiros" name="passageiros" min="1" max="20" value="1">
+          <select required>
+            <option value="basico">Básico</option>
+            <option value="premium">Premium</option>
+          </select>
 
+          <label for="pedidos">Pedidos especiais:</label>
 
-  <label for="transporte">Meio de transporte favorito:</label>
+          <textarea
+            id="pedidos"
+            name="pedidos"
+            rows="4"
+            cols="50"
+            placeholder="Escreva aqui se tiver pedidos especiais..."
+          ></textarea>
 
-  <input list="transportes" id="transporte" name="transporte" placeholder="Ex: Carro">
-          <datalist id = "transportes">
-            <option value="carro">
-            <option value="comboio">
-            <option value="aviao">
-            <option value="autocarro">
-            <option value="navio">
-        </datalist>
+          <label for="valor"
+            >Qual o valor que espera gastar por pessoa e por dia na sua viagem?
+            (€)</label
+          >
 
-  <label for="servico">Qual o serviço desejado:</label>
+          <input
+            type="number"
+            id="valor"
+            name="valor"
+            min="0"
+            step="0.01"
+            placeholder="Ex: 100.00"
+          />
 
-  <select required>
-        <option value="basico">Básico</option>
-        <option value="premium">Premium</option>
-  </select>       
-
-
-  <label for="pedidos">Pedidos especiais:</label>
-
-  <textarea id="pedidos" name="pedidos" rows="4" cols="50" placeholder="Escreva aqui se tiver pedidos especiais..."></textarea>
-
-
-  <label for="valor">Qual o valor que espera gastar por pessoa e por dia na sua viagem? (€)</label>
-
-  <input type="number" id="valor" name="valor" min="0" step="0.01" placeholder="Ex: 100.00">
-
-  
-
-  <input type="submit" value="Viagem">
-  </fieldset>
+          <input type="submit" value="Viagem" />
+        </fieldset>
       </form>
     </main>
     <footer>
