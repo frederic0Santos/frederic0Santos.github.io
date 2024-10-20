@@ -73,8 +73,8 @@ pre {
   background-color: rgba(0, 0, 0, 0.651);
   border-radius: 20px;
 }
-.poema {
-  text-align: center;
+#poema {
+  text-align: left;
   display: inline-block;
 }
 .containerPonto {
