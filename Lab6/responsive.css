@@ -1,0 +1,124 @@
+* {box-sizing: border-box; padding: 0; margin: 0;}
+header {grid-area: header;}
+nav {grid-area: menu;}
+main {grid-area: main;}
+aside {grid-area: aside;}
+footer {grid-area: footer;}
+.menu-toggle {
+    display: none;
+    background-color: #000000;
+    color: white;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+}
+
+.menu-toggle:focus {
+    outline: none;
+}
+
+.menu-toggle-checkbox {
+    display: none;
+}
+.quizz .menu-toggle-checkbox {
+    display: none;
+}
+
+
+@media only screen and (max-width: 767px) {
+ header{
+    width: 100vw;
+ }
+ img{
+    width: 30vw;
+ }
+ .menu-toggle-checkbox:checked + .menu-toggle + .nav-container {
+    display: flex;
+}
+.menu-toggle {
+    display: block;
+}
+.nav-container {
+    display: none;
+    position: absolute;
+    width: 30vw;
+    flex-direction: column;
+    background-color: #000000;
+    padding: 10px;
+    margin-left: 5px;
+    border-radius: 0px 0px 10px 10px;
+    gap: 0;
+    align-items: left;
+}
+.poema{
+    font-size: 2vw;
+}
+main{
+    margin: 8vw ;  
+    padding: 2vw;  
+}
+ iframe{
+     width: 50vw;
+ }
+    table {
+        font-size: 1.5vw;
+    }
+
+th, td {
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 2vw;
+    text-align: left;
+    width: 2vw; 
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    header{
+        width: 100vw;
+     }
+     img{
+        width: 30vw;
+     }
+     .menu-toggle-checkbox:checked + .menu-toggle + .nav-container {
+        display: flex;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    .nav-container {
+        display: none;
+        position: absolute;
+        width: 30vw;
+        flex-direction: column;
+        background-color: #000000;
+        padding: 10px;
+        margin-left: 5px;
+        border-radius: 0px 0px 10px 10px;
+        gap: 0;
+        align-items: left;
+    }
+    main{
+        margin: 8vw ;    
+    }
+    table {
+        font-size: 1.5vw;
+    }
+      
+    th, td {
+        word-wrap: break-word;
+        white-space: normal;
+        padding: 1vw;
+        text-align: left;
+        width: 1vw; 
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    th, td {
+        padding: 1vw;
+    }
+}
