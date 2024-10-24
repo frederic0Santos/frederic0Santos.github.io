@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+
+header {
+    grid-area: header-area;
+}
+
+nav {
+    grid-area: menu-area;
+}
+
+.primeiralinha {
+    grid-area: linha;
+}
+
+.intro {
+    grid-area: intro;
+}
+
+footer {
+    grid-area: footer-area;
+}
+
+h1{
+    padding: 30px;
+    background-color: rgb(187, 186, 186);
+    text-align: center;
+  }
+  body {
+    background-color: rgb(212, 212, 212);
+    display: grid;
+    grid-template-columns: 1fr 60vw;
+    grid-template-areas:
+        'header-area header-area'
+        'linha linha'
+        'intro menu-area'
+        'footer-area footer-area';
+}
+  footer{
+    background-color: rgb(187, 186, 186);
+    padding: 10px;
+    text-align: center;
+}
+.primeiralinha{
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+}
+nav{
+    grid-area: menu-area;
+    height: auto;
+    background-color: white;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin: 20px;
+    flex-wrap: wrap;
+}
+nav div{
+    display: flex;
+    flex-direction: row;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    width: 60px;
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction:row;
+    padding: 10px;
+    max-width: fit-content;
+    background-color: rgb(211, 210, 210);
+}
+a:nth-child(odd){
+background-color: gray;
+}
+nav a:hover{
+    background-color: #1d1c1c;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.intro{
+    grid-area: intro;
+    height: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 20px;
+}
+.intro ul{
+    list-style-type: circle;
+    display: flex;
+    flex-direction: column;
+}
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: rgb(212, 212, 212);
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'header-area'
+            'linha'
+            'intro'
+            'menu-area'
+            'footer-area';
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+}

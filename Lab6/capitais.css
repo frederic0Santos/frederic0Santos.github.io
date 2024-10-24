@@ -178,7 +178,7 @@ transition: transform 1s;
 }
 .animacao p{
   animation-name: animacao;  
-  animation-duration: 10ms;
+  animation-duration: 100ms;
   /* para a animação nunca parar */
   animation-iteration-count: infinite;
   /* por defeito acelera no inicio e desacelera no fim. aqui fica uniforme */ 
