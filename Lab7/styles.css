@@ -1,0 +1,61 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+none{
+    grid-area: none;
+}
+body {
+    background-color: rgb(218, 238, 179);
+    display: grid;
+    flex-direction: column;
+    text-align: left;
+    margin: 40px;
+    grid-template-rows: 140px 100px 400px;
+    grid-template-columns: 600px;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'texto';
+}
+.divTextColor {
+    display: flex;
+    align-items: center;
+}
+
+.divTextColor button {
+    margin-inline: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+ol{
+    background-color: rgb(211, 248, 197);
+    display: flex;
+    padding: 40px;
+    border-radius: 20px;
+    flex-direction: column;
+    grid-area: texto;
+}
+
+nav{
+    grid-area: nav;
+}
+ul{
+    list-style: decimal;
+}
+li{
+    font-size: 20px;
+    margin: 20px;
+}
+header {
+    display: flex;
+    font-size: 30px;
+    margin: 20px;
+    grid-area: header;
+    align-items: center;
+    justify-content: center;
+
+}
+
