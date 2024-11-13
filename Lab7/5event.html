@@ -6,25 +6,35 @@
     <link rel="stylesheet" href="styles.css">
     <title>JavaScript</title>
 </head>
-<body>
+<header>
     <h1>JavaScript</h1>
-    <ol>
-        <li class="hoverJS">Passa por aqui</li>
-        <div class="divTextColor">
-        <li id="textColor">Pinta-me!</li>
-        <button id="textRed">Red</button>
-        <button id="textGreen">Green</button>
-        <button id="textBlue">Blue</button>
-        </div>
-        <li>Experimenta escrever...
-            <input type="text" id="escrever"></li>
-        <li> Escolha uma cor em inglês:
-            <input type="text" id="cor_escrita">
-            <input type="submit" value="submeter" id="sumbit"></li>
-        <li><button id="contar">Conta!</button>
-            <span id="contador">0</span></li>
-    </ol>
+</header>
+<nav>
+    <a href="/index.html">Home</a>
+    <a href="index.html">Introdução</a>
+    <a href="5event.html">Eventos</a>
+</nav>
+<body id="body2">
+    <div class="Eventos">
+    <p id="coords">Coordenadas do mouse:</p>
+    <p id="tecladown">Tecla pressionada:</p>
+    <p id="teclaup">Tecla solta:</p>
+    <div class="box" id="clickBox">Clique em mim!</div>
+    
+    <!-- Evento de Teclado -->
+    <input type="text" id="keyInput" placeholder="Pressione uma tecla">
 
-    <script src="main.js"></script>
+    <!-- Evento de Formulário -->
+    <form id="myForm">
+        <input type="text" id="textField" placeholder="Digite algo">
+        <button type="submit">Enviar</button>
+    </form>
+
+    <!-- Alteração de Elemento -->
+    <button id="changeTextBtn">Alterar Texto</button>
+    <div id="textElement">Texto a ser alterado</div>
+
+    <script src="script.js"></script>
+    </div>
 </body>
 </html>

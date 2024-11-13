@@ -11,6 +11,7 @@ body {
     display: grid;
     flex-direction: column;
     text-align: left;
+    justify-content: center;
     margin: 40px;
     grid-template-rows: 140px 100px 400px;
     grid-template-columns: 600px;
@@ -18,6 +19,9 @@ body {
     'header'
     'nav'
     'texto';
+}
+#body2{
+    grid-template-rows: 140px 100px 500px;
 }
 .divTextColor {
     display: flex;
@@ -29,8 +33,7 @@ body {
     padding: 5px;
     border-radius: 10px;
 }
-
-ol{
+.Eventos,ol{
     background-color: rgb(211, 248, 197);
     display: flex;
     padding: 40px;
@@ -41,6 +44,15 @@ ol{
 
 nav{
     grid-area: nav;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: rgb(206, 238, 180);
 }
 ul{
     list-style: decimal;
@@ -59,3 +71,58 @@ header {
 
 }
 
+input{
+    background-color: white;
+    border: 1px solid;
+    padding: 2px;
+}
+#sumbit,button{
+    background-color: white;
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 8px;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    background-color: rgb(208, 248, 150);
+    padding: 10px;
+    border-radius: 30px;
+}
+a:hover{
+    color: white;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#textElement {
+    margin-top: 20px;
+    font-size: 18px;
+}
+p{
+    margin: 10px;
+    font-size: 18px;
+}
