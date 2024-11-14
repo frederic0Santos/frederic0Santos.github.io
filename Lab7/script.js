@@ -21,12 +21,12 @@ document.getElementById('clickBox').addEventListener('dblclick', function() {
 
 // Evento de Rato (mouseover)
 document.getElementById('clickBox').addEventListener('mouseover', function() {
-    document.getElementById('clickBox').style.backgroundColor = 'Green';
+    document.getElementById('clickBox').style.backgroundColor = 'blue';
 });
 
 // Evento de Rato (mouseout)
 document.getElementById('clickBox').addEventListener('mouseout', function() {
-    document.getElementById('clickBox').style.backgroundColor = 'lightgreen';
+    document.getElementById('clickBox').style.backgroundColor = 'lightblue';
 });
 
 // Evento de Rato (mousemove)
