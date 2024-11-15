@@ -91,6 +91,9 @@ input,select{
     border-radius: 8px;
     width: fit-content;
 }
+#sumbit:hover{
+    background-color: rgb(231, 231, 231);
+}
 a{
     text-decoration: none;
     color: black;
