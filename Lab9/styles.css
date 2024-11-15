@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    display: grid;
+    grid-template-columns:"200px";
+    grid-template-rows: "2px";
+    grid-template-areas: 
+    "header header";
+    background-color: rgb(135, 100, 69);
+}
+header {
+    grid-area: header;
+    background-color: rgb(238, 195, 115);
+    padding: 10px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+nav {
+    display: flex;
+    padding: 10px;
+}
+ul{
+    display: flex;
+    list-style-type: none;
+}
+li{
+    margin-right: 10px;
+}

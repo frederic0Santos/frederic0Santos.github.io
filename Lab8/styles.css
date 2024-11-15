@@ -1,0 +1,137 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+none{
+    grid-area: none;
+}
+body {
+    background-color: rgb(199, 244, 233);
+    display: grid;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    margin: 40px;
+    grid-template-rows: 140px 100px auto;
+    grid-template-columns: 600px;
+    grid-template-areas: 
+    'header'
+    'nav'
+    'texto';
+}
+#body2{
+    grid-template-rows: 140px 100px 500px;
+}
+.divTextColor {
+    display: flex;
+    align-items: center;
+}
+
+.divTextColor button {
+    margin-inline: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.Eventos,ol{
+    background-color: rgb(171, 234, 241);
+    display: flex;
+    padding: 40px;
+    border-radius: 20px;
+    flex-direction: column;
+    grid-area: texto;
+}
+
+nav{
+    grid-area: nav;
+    text-align: center;
+    margin: 10px;
+    font-size: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 20px;
+    background-color: rgb(171, 234, 241);
+}
+ul{
+    list-style: decimal;
+}
+li{
+    align-items: center;
+    font-size: 20px;
+    margin: 20px;
+}
+header {
+    display: flex;
+    font-size: 30px;
+    margin: 20px;
+    grid-area: header;
+    align-items: center;
+    justify-content: center;
+
+}
+#formIntro{
+    display: flex;
+    flex-direction: column;
+}
+input,select{
+    background-color: white;
+    border: 1px solid;
+    padding: 2px;
+}
+#nome,#idade{
+    width: fit-content;
+}
+#sumbit,button{
+    margin-top: 4px;
+    background-color: white;
+    border: 1px solid black;
+    padding: 2px;
+    border-radius: 8px;
+    width: fit-content;
+}
+a{
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    background-color: rgb(150, 248, 246);
+    padding: 10px;
+    border-radius: 30px;
+}
+a:hover{
+    color: white;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    margin: 20px auto;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+button {
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #3d38ca;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0c0e89;
+}
+
+#textElement {
+    margin-top: 20px;
+    font-size: 18px;
+}
+p{
+    margin: 10px;
+    font-size: 18px;
+}
