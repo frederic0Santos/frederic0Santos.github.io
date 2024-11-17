@@ -20,11 +20,15 @@ colorButtons.forEach(button => {
     });
 });
 
+if (!localStorage.getItem('count')) {
+    localStorage.setItem('count', 0);
+}
 
-let count = 0;
-document.getElementById('contador1').textContent = count;
+document.getElementById('contador1').textContent = localStorage.getItem('count');
+
 
 document.querySelector("#clickContador").addEventListener("click", () => {
+    let count = parseInt(localStorage.getItem('count')); 
     count++;
     document.getElementById('contador1').textContent = count;
     localStorage.setItem('count', count);
