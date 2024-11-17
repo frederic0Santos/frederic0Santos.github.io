@@ -29,7 +29,7 @@ document.querySelector("#clickContador").addEventListener("click", () => {
     document.getElementById('contador1').textContent = count;
     localStorage.setItem('count', count);
 });
-
+document.querySelector('#contador1').textContent = localStorage.getItem('count');
 
 const escrever = document.querySelector("#escrever");
 function getRandomColor() {
