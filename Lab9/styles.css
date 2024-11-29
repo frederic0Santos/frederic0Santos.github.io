@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     background-color: rgb(135, 100, 69);
     scroll-behavior: smooth;
+    padding-top: 90px;
 }
 
 h1 {
@@ -29,16 +37,18 @@ h2 {
 }
 
 header {
+    font-size: 120%;
     width: 100vw;
     background-color: rgb(238, 195, 115);
-    padding: 20px;
-    position: sticky;
+    padding: 30px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    z-index: 1;
+    width: 100%;
 }
 
 nav {
@@ -50,30 +60,27 @@ a {
     text-decoration: none;
     color: white;
     position: relative;
-    font-size: 1.4rem;
-    transition: transform 0.3s ease;
+    font-size: 140%;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-size: 145%;
 }
 
 a::after {
     content: '';
     position: absolute;
-    bottom: 0;
     left: 0;
-    width: 100%;
+    bottom: -2px;
+    width: 0;
     height: 2px;
     background-color: white;
-    transform: scaleX(0);
-    transform-origin: bottom right;
-    transition: transform 0.3s ease-out;
-}
-
-a:hover {
-    transform: scale(1.2);
+    transition: all 0.3s ease;
 }
 
 a:hover::after {
-    transform: scaleX(1);
-    transform-origin: bottom left;
+    width: 100%;
 }
 
 ul {
@@ -82,8 +89,8 @@ ul {
 }
 
 li {
-    margin-right: 10px;
-    font-size: 130%;
+    margin-right: 15px;
+    font-size: 1.2rem;
 }
 
 section#produtos,
@@ -173,10 +180,6 @@ button:hover {
 #total {
     font-size: 1.5em;
     color: rgb(255, 255, 255);
-}
-
-body {
-    margin-top: 0;
 }
 
 html {
