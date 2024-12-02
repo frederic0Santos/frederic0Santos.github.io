@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(135, 100, 69);
+    scroll-behavior: smooth;
+    padding-top: 90px;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 200%;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#produtos h2, #cesto h2 {
+    color: black;
+    font-size: 150%;
+}
+
+header {
+    font-size: 120%;
+    width: 100vw;
+    background-color: rgb(238, 195, 115);
+    padding: 30px 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    font-size: 140%;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    font-size: 145%;
+}
+
+a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+}
+
+li {
+    margin-right: 15px;
+    font-size: 1.2rem;
+}
+
+section#produtos,
+section#cesto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.02);
+}
+
+img {
+    width: 100%;
+    height: 220px;
+    object-fit: contain;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    text-align: center;
+    margin: 10px;
+}
+
+.descricao {
+    background-color: rgb(252, 236, 206);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 1rem;
+    color: #000000;
+    margin: 15px 0;
+    min-height: 60px; 
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: rgb(71, 43, 34);
+    text-align: center;
+}
+
+button {
+    background-color: rgb(243, 186, 99);
+    color: white;
+    border: 1px solid rgb(248, 248, 248);
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: auto;
+    align-self: center;
+}
+
+button:hover {
+    background-color: rgb(143, 96, 52);
+    color: white;
+}
+
+#total-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#total {
+    font-size: 1.5em;
+    color: rgb(255, 255, 255);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+#filtros{
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 115%;
+}
+select,input{
+    color: black;
+    border: 1px solid black;
+    padding-inline: 5px;
+}
+footer{
+    background-color: rgb(243, 186, 99);
+    padding: 20px;
+    color: white;
+    text-align: center;
+    font-size: 110%;
+    margin-top: 140px;
+}
+#total{
+    text-align: center;
+    margin: 50px;
+}
+#comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    margin: 30px;
+    flex-direction: column;
+    background-color: rgb(238, 195, 115);
+    border-radius: 30px;
+}
+#comprar article{
+    transform: none;
+    text-align: center;
+    margin: 10px;
+    border: 0px solid;
+    padding: 5px;
+    display: flex;
+    color: white;
+    box-shadow: none;
+    background-color: rgba(238, 195, 115, 0);
+}
+#comprar button{
+    margin-top: 20px;
+}
+#comprar .cupao{
+    width: 200px;
+}
+#comprar p {
+    margin-top: 20px;
+    color: white;
+    font-size: 110%;
+}
