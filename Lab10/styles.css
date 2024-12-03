@@ -14,7 +14,8 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-color: rgb(135, 100, 69);
+    background-image: url("imagens/backgroundLoja.jpg");
+    background-repeat: repeat;
     scroll-behavior: smooth;
     padding-top: 90px;
 }
