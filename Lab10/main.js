@@ -256,13 +256,20 @@ function atualizarBotaoComprar() {
 
     const existingAluno = comprarSection.querySelector(".se-aluno");
     const existingCupao = comprarSection.querySelector(".cupao");
+    const existingValorApagar = comprarSection.querySelector("#valorApagar");
+    const existingReferencia = comprarSection.querySelector("#referencia");
     if (existingAluno) {
         comprarSection.removeChild(existingAluno);
     }
     if (existingCupao) {
         comprarSection.removeChild(existingCupao);
     }
-
+    if(existingValorApagar) {
+        comprarSection.removeChild(existingValorApagar);
+    }
+    if (existingReferencia) {
+        comprarSection.removeChild(existingReferencia);
+    }
     if (cesto.length > 0) {
 
         const seAluno = document.createElement("article");
@@ -280,6 +287,7 @@ function atualizarBotaoComprar() {
         const botaoComprar = document.createElement("button");
         botaoComprar.textContent = "Comprar";
         botaoComprar.classList.add("botao-comprar");
+        
 
         botaoComprar.addEventListener("click", function () {
             const produtosIDS = cesto.map(produto => produto.id);

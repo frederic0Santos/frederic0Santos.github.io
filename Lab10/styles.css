@@ -102,7 +102,7 @@ section#cesto {
     gap: 20px;
 }
 
-article {
+#produtos article, #cesto article{
     display: flex;
     flex-direction: column;
     background-color: rgb(255, 255, 255);
@@ -187,10 +187,23 @@ html {
     scroll-behavior: smooth;
 }
 #filtros{
+    display: flex;
+    flex-wrap: wrap;
     color: white;
+    align-items: center;
     padding: 20px;
     text-align: center;
-    font-size: 115%;
+    justify-content: center;
+    font-size: 130%;
+}
+#filtros input, #filtros select{
+    color: gray;
+    margin: 10px;
+    padding: 2px;
+    border-radius: 5px;
+    border: 1px solid white;
+    background-color: transparent;
+
 }
 select,input{
     color: black;
