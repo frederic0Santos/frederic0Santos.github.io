@@ -19,7 +19,7 @@ function carregarProdutos(produtos) {
     });
 }
 const info = document.querySelector('#info');
-info.addEventListener("click", removeDescricao());
+info.addEventListener("click", removeDescricao);
 function removeDescricao() {
     const descricoes = document.querySelectorAll(".descricao");
     if (descricoes.length > 0) {
@@ -27,7 +27,7 @@ function removeDescricao() {
     }
 }
 const botaoRemover = document.querySelector("#botaoRemover");
-botaoRemover.addEventListener("click", removeALL());
+botaoRemover.addEventListener("click", removeALL);
 function atualizarProdutos(produtos) {
     const container = document.querySelector("#produtos");
     container.innerHTML = "";
